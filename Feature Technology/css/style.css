@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+}
+
+.half-gray-black {
+    background: linear-gradient(to bottom, #d3d3d3 50%, #000 50%);
+    color: white;
+    padding: 2rem;
+}
+.half-gray-black h2, 
+.half-gray-black h3, 
+.half-gray-black p {
+    color: #d3d3d3;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background-color: #ffc0cb;
+    padding: 2rem;
+}
+
+.sidebar h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.sidebar ul li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.content-section {
+    margin-bottom: 3rem;
+}
+
+.product-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: #ff6b81;
+    border-color: #ff6b81;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #ff4757;
+    border-color: #ff4757;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #ff6b81;
+    box-shadow: 0 0 5px rgba(255, 107, 129, 0.5);
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.text-dark {
+    color: #212529 !important;
+}
+
+.text-white {
+    color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        order: 2;
+    }
+    .half-gray-black {
+        order: 1;
+    }
+}
